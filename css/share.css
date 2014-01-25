@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* Original CSS Dropdown menu by OSblogger */
+
+@import url("fontello.css");
+
+.share-container {
+    float: right;
+    position: relative;
+    top: -138px;
+    z-index: 100;
+}
+.share-container .icon {
+    float: right;
+    margin-right: 20px;
+    font-size: 16px;
+    }
+.share-container .title {
+    font-size: 20px;
+    color: #b22c00;
+    width:400px;
+    margin: 2% auto;
+}
+.share-container .dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 250px;
+}
+.share-container .dropdown-text::-moz-selection,
+.share-container .dropdown-toggle::-moz-selection {
+background: transparent;
+color: inherit;
+}
+.share-container .dropdown-text::selection,
+.share-container .dropdown-toggle::selection {
+background: transparent;
+color: inherit;
+}
+.share-container .dropdown-text {
+  cursor: pointer;
+  position: absolute;
+  text-indent: 10px;
+  line-height: 38px;
+  background-color: #4c689a;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 3px 2px #466294;
+  box-shadow: 0 3px 3px 2px #466294;
+}
+.share-container .dropdown-text,
+.share-container .dropdown-content a {
+  color: #fff;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+}
+.share-container .dropdown-toggle {
+  font-size: 0;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 1px;
+  background: transparent;
+  text-indent: -10px;
+  height: 34px;
+  width: 100%;
+}
+.share-container .dropdown-toggle:focus {
+  outline: 0;
+}
+.share-container .dropdown-content:after {
+    position: absolute;
+    right: 14px;
+    top: -9px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 8px 9px 8px;
+    border-color: transparent transparent #446092 transparent;
+}
+.share-container .dropdown-content {
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -ms-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+  list-style-type: none;
+  position: absolute;
+  top: 32px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility:hidden;
+  text-indent: 10px;
+  line-height: 38px;
+  background-color: #446092;
+  width: 250px;
+}
+.share-container .dropdown-content li {
+border-bottom:4px solid #fff;
+overflow:hidden;
+}
+.share-container .dropdown-content li:last-child {
+border-bottom:none;
+}
+.share-container .dropdown-content a {
+  display: block;
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -ms-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+}
+.share-container .dropdown-content a:hover {
+  background: #999;
+  padding-left:5px;
+}
+.share-container .dropdown-content a:hover i{
+  color: #000;
+}
+.share-container .dropdown-toggle:hover ~ .dropdown-text,
+.share-container .dropdown-toggle:focus ~ .dropdown-text {
+  background-color: #444;
+}
+.share-container .dropdown-toggle:focus ~ .dropdown-text {
+  border-color: #c5c5c5;
+  z-index: 2;
+}
+.share-container .dropdown-toggle:focus ~ .dropdown-text:after {
+  border-width: 0 4px 5px 4px;
+  border-color: transparent transparent #555 transparent;
+}
+.share-container .dropdown-content:hover,
+.share-container .dropdown-toggle:focus ~ .dropdown-content {
+  opacity: 1;
+  visibility:visible;
+  top: 55px;
+}
