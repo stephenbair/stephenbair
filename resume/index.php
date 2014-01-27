@@ -10,11 +10,21 @@
         <div class="content clearfix">
             <div class="container">
             	<p>Lets just get right to the good stuff, Stephen's qualifications. Stephen has over 8 years of experience in the creation of websites and the utilization of various web technologies. His online masterpieces not only utilize front-end technologies on the browser, but he also has experience with JSP, JSP, ColdFusion, and PHP. 
-            	<p>The landscape of the internet has changed drastically in the past few years with the W3C gaining support and traction for new technologies like HTML5 and CSS3. He has worked with many of these new and emerging coding standards and uses them daily in his ongoing work. Below is a sampling of Stephen's overall experience in the online world.</p>
+            	<p class="spacer">The landscape of the internet has changed drastically in the past few years with the W3C gaining support and traction for new technologies like HTML5 and CSS3. He has worked with many of these new and emerging coding standards and uses them daily in his ongoing work. Below is a sampling of Stephen's overall experience in the online world.</p>
+            	<nav>
+            		<ul>
+            			<li>Download Resume:</li>
+            			<li><a href="/downloads/resume.pdf">PDF</a></li>
+            			<li><a href="/downloads/resume.docx">Word</a></li>
+            		</ul>
+            	</nav>
                 <article>
                 	<section class="header">
-                		<img src="../images/logo.png" alt="stephenbair.com logo"/>
-                		<h2>stephen bair<span>[interactive media developer]</span></h2>
+                		<img src="../images/resume-logo.png" alt="stephenbair.com logo"/>
+	                	<div class="header-text">
+	                		<h2>stephen bair</h2>
+							<p>[&nbsp;interactive media developer&nbsp;]</p>
+	                	</div>
                 	</section>
                 	<section class="address">
                 		<ul>
@@ -43,11 +53,11 @@
 						<h3>Skills</h3>
 						<ul>
 							<li>Web Development</li>
-							<li>XHTML, HTML5, CSS3, JavaScript, PHP, JSP, Bootstrap3, MySQL, XML, Google Analytics</li>
+							<li>XHTML, HTML5, CSS3, JavaScript, PHP, JSP, Bootstrap3, MySQL, Google Analytics, Git, jQuery, Linux</li>
 						</ul>
 						<ul>
 							<li>Web Design</li>
-							<li>Adobe Illustrator, Adobe Photoshop</li>
+							<li>Adobe Photoshop, Adobe Illustrator</li>
 						</ul>
                     </section>
 					<section class="achievements">
@@ -90,7 +100,7 @@
 							<li>July 2013 - Present</li>
 						</ul>
 						<ul>
-							<li>eBay Enterprise</li>
+							<li>eBay Enterprise, an eBay company</li>
 							<li>King of Prussia, PA</li>
 							<li>Senior Manager, Application Development</li>
 							<li>April 2012 – July 2013</li>

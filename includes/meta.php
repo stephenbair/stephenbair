@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/share.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
-	<!-- js -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door">
+	<!-- javascript -->
 	<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>

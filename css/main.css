@@ -45,8 +45,10 @@ a:hover{text-decoration: none;}
 	padding-top: 30px;
 }
 h1,h2,h3{
-	text-transform: uppercase;
+	text-transform: lowercase;
+	font-weight: normal;
 }
+
 
 /*================== Logo */
 #logo{
@@ -61,9 +63,10 @@ h1,h2,h3{
 	font-size: 22px;
 	color: #fff;
 	text-shadow: 1px 1px 1px #454545;
+	width: 160px;
 }
 
-/*================== Menu */
+/*================== Primary Menu */
 nav#menu{
 	float: right;
 	width: 500px;
@@ -107,6 +110,45 @@ nav#menu li.active a{
 	color: #fff;
 }
 
+/*==== Secondary Menu */
+
+.content nav{
+	float: left;
+	width: 15%;
+	min-height: 300px;
+	margin: 0 5% 0 0;
+	background: url(../images/div-vert-shadow.jpg) no-repeat right top;
+}
+.content nav li{
+	float: left;
+	clear: both;
+	margin: 0 0 12px 0; 
+}
+.content nav li a{
+	color: #fff;
+	text-transform: lowercase;
+	padding: 5px 15px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #4c689a;
+	background: -moz-linear-gradient(top,  #4c689a 14%, #d6d6d6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,#4c689a), color-stop(100%,#d6d6d6));
+	background: -webkit-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
+	background: -o-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
+	background: -ms-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
+	background: linear-gradient(to bottom,  #4c689a 14%,#d6d6d6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c689a', endColorstr='#d6d6d6',GradientType=0 );
+}
+.content nav li a:hover{
+	background: #444;
+	-webkit-transition: background 1s linear;
+	-moz-transition: background 1s linear;
+	-ms-transition: background 1s linear;
+	-o-transition: background 1s linear;
+	transition: background 1s linear;
+}
+
+
 /*================== Home */
 #home figure.primary{
 	border:20px #fff solid;
@@ -135,7 +177,7 @@ nav#menu li.active a{
 	width: 100%;
 	background: #fff;
 	position: relative;
-    top: 200px;
+    top: 160px;
 }
 #home article{
 	position: relative;
@@ -155,10 +197,22 @@ nav#menu li.active a{
 	padding-left: 60px;
 	background: url(../images/div-vert-shadow.jpg) no-repeat left top;
 }
+#home article aside img{
+	-webkit-box-shadow: 1px 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px 1px #999;
+}
 
 /*================== portfolio */
 #portfolio .section-container{
-	width: 100%;
+	float: left;
+	width: 80%;
+}
+#portfolio h2{
+	color: #444444;
+    font-size: 48px;
+    letter-spacing: -3px;
+    line-height: 42px;
+    border-bottom: 1px #ccc solid;
 }
 #portfolio section{
 	float: left;
@@ -166,52 +220,112 @@ nav#menu li.active a{
 }
 #portfolio .listing{
 	width: 213px;
-	height: 360px;
+	height: 380px;
 	float: left;
 	padding: 0 45px 0 0;
 	text-align: center;
 }
-#portfolio .content h3{
-	color: #4C689A;
-	margin: 5px 0;
+#portfolio .branding .listing{
+	clear: both;
+	width: 450px;
+	height: 330px;
+	float: none;
+	margin: 0 auto;
 }
-#portfolio .content p{
-	margin: 5px 0;
-}
-#portfolio .content nav{
-	width: 100%;
-}
-#portfolio .content nav li{
-	float: left;
-	margin: 0 5px 0 0; 
-}
-#portfolio .content nav li a{
-	color: #fff;
-	text-transform: uppercase;
-	padding: 5px 15px;
+#portfolio .listing img[src$=".jpg"]{
 	-webkit-border-radius: 10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
-	background: #4c689a;
-	background: -moz-linear-gradient(top,  #4c689a 14%, #d6d6d6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,#4c689a), color-stop(100%,#d6d6d6));
-	background: -webkit-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
-	background: -o-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
-	background: -ms-linear-gradient(top,  #4c689a 14%,#d6d6d6 100%);
-	background: linear-gradient(to bottom,  #4c689a 14%,#d6d6d6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c689a', endColorstr='#d6d6d6',GradientType=0 );
 }
-#portfolio .content nav li a:hover{
-	background: #444;
-	-webkit-transition: background 1s linear;
-	-moz-transition: background 1s linear;
-	-ms-transition: background 1s linear;
-	-o-transition: background 1s linear;
-	transition: background 1s linear;
+#portfolio .branding .listing img.arnold{
+	-webkit-box-shadow: 1px 1px 6px 1px rgba(249,212,9,.4);
+	box-shadow: 1px 1px 6px 1px rgba(249,212,9,.4);
+}
+#portfolio .branding .listing img.ssc{
+	-webkit-box-shadow: 1px 1px 6px 1px rgba(56,74,160,.4);
+	box-shadow: 1px 1px 6px 1px rgba(56,74,160,.4);
+}
+#portfolio .branding .listing img.jarnold{
+	-webkit-box-shadow: 1px 1px 6px 1px rgba(229,28,34,.4);
+	box-shadow: 1px 1px 6px 1px rgba(229,28,34,.4);
+}
+#portfolio .content h3{
+	color: #4C689A;
+	margin: 10px 0;
+	text-transform: uppercase;
 }
 
+.motion {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: motion;
+	animation-name: motion;
+}
+
+/*==== Text Motion */
+@-webkit-keyframes motion {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-2deg);
+    transform: scale(0.9) rotate(-2deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(1) rotate(-2deg);
+    transform: scale(1) rotate(-2deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes motion {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-2deg);
+    -ms-transform: scale(0.9) rotate(-2deg);
+    transform: scale(0.9) rotate(-2deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(1) rotate(-2deg);
+    -ms-transform: scale(1) rotate(-2deg);
+    transform: scale(1) rotate(-2deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
 
 /*================== resume */
 #resume article{
+	float: left;
 	width: 700px;
 	height: 800px;
 	border: 1px #444 solid;
@@ -222,7 +336,11 @@ nav#menu li.active a{
 	box-shadow: 1px 1px 1px 1px #999;
 	margin: 0 auto;
 }
-#resume article h3{color: #4C689A;}
+#resume article h3{
+	color: #4C689A;
+	text-transform: capitalize;
+	font-weight: bold;
+}
 #resume article h3{margin: 0 0 5px 0;}
 #resume article ul{margin: 0 0 10px 0;}
 #resume section.header{
@@ -230,11 +348,20 @@ nav#menu li.active a{
 	top: 30px;
 	left: 30px;
 }
-#resume section.header img{
+#resume section.header img{float: left;}
+#resume section.header .header-text{
 	float: left;
+	margin: 0 0 0 15px;
 }
 #resume section.header h2{
-	float: left;
+	text-transform: lowercase;
+	margin: 0 0 0 0;
+	color: #4C689A;
+	font-size: 24px;
+}
+#resume section.header p{
+	margin: 0 0 0 0;
+	font-size: 16px;
 }
 #resume section.address{
 	position: absolute;
@@ -275,10 +402,71 @@ nav#menu li.active a{
 }
 #resume section.address li.highlight:first-letter{color: #4C689A;}
 
+/*================== contact */
+#contact .content h2{
+	margin: 15px 0 0 0;
+	color: #4C689A;
+	font-size: 16px;
+	font-weight: bold;
+}
+#contact .content #contact-form{
+	float: left;
+	position: relative;
+	width: 420px;
+}
+#contact .content #contact-form fieldset{
+	padding: 0;
+	height: 400px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px 1px #999;
+}
+#contact .content #contact-form label{/* set labels off screen but visible by screen reader */
+	position: absolute;
+    text-indent: -9999px;
+}
+#contact .content #contact-form input, #contact .content #contact-form select, #contact .content #contact-form textarea, #contact .content #contact-form button{
+	float: left;
+	clear: both;
+	width: 300px;
+	margin: 0 0 15px 0;
+	font-family: 'The Girl Next Door', arial, sans-serif;
+}
+#contact .content #contact-form select{
+	border: 1px #999 solid;
+}
+#contact .content #contact-form input[type="text"]{
+	height: 20px;
+	border: 0;
+	border-bottom: 1px #999 solid;
+}
+#contact .content #contact-form textarea{
+	height: 150px;
+	width: 400px;
+}
+#contact .content #contact-form button[type="submit"]{
+	width: 100%;
+	border: 0;
+	background: #999;
+	padding: 5px 0 0 0;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#contact .content #contact-form button[type="submit"]:hover{
+	background: #000;
+	color: #fff;
+}
+#contact .content ul.side{
+	float: left;
+	margin: 0 0 0 60px;
+}
+#contact .content ul.side ul{
+	margin: 0;
+}
 
-/* footer */
+/*================== footer */
 footer{
-	margin: 60px auto 0 auto !important;
+	margin: 30px auto 0 auto !important;
 	padding: 15px 0 15px 0;
 	font-family: arial, helvetica, sans-serif;
 	font-size: 9px;

@@ -13,7 +13,7 @@
             	<figcaption>If you can't explain it simply, you don't understand it well enough.<br/><span>-&nbsp;Albert Einstein</span></figcaption>
                 <article>
                 	<aside>
-						<h2>resume</h2>
+						<h2>check out the resume</h2>
 						<figure><a href="/resume/"><img src="../images/resume.png" alt="Resume Screenshot"/></a></figure>
                  	</aside>
                     <section>

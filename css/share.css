@@ -49,8 +49,10 @@ color: inherit;
 .share-container .dropdown-text,
 .share-container .dropdown-content a {
   color: #fff;
-  text-transform:uppercase;
   letter-spacing: 1px;
+}
+.share-container .dropdown-text{
+	text-transform: uppercase;
 }
 .share-container .dropdown-toggle {
   font-size: 0;
