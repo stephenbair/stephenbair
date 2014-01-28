@@ -11,11 +11,11 @@
 	<meta name="description" content="An interactive media design and development company." />
 	<meta name="author" content="Stephen Bair">
 	<meta name="robots" content="index,follow">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<!-- css -->
 	<link rel="stylesheet" href="../css/normalize.min.css">
-	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/share.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door">
 	<!-- javascript -->

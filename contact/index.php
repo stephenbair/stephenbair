@@ -41,7 +41,7 @@
 	        		</li>
 	        		<li>
 	        			<h2>Skype</h2>
-	        			bairstephen
+	        			<a href="skype:">bairstephen</a>
 	        		</li>
 	        		<li>
 	        			<h2>Social</h2>

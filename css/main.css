@@ -49,13 +49,12 @@ h1,h2,h3{
 	font-weight: normal;
 }
 
-
 /*================== Logo */
 #logo{
 	float: left;
-	width: 350px;
+	width: 270px;
 	position: relative;
-	margin-top: 30px;
+	margin: 30px 0 0 15px;
 }
 #logo p{
 	position:absolute; 
@@ -66,14 +65,21 @@ h1,h2,h3{
 	width: 160px;
 }
 
+/*================== Header */
+header{
+	position: relative;
+	height: 150px;
+    width: 100%;
+}
+
 /*================== Primary Menu */
 nav#menu{
 	float: right;
-	width: 500px;
-	height: 90px;
+	width: 320px;
+	height: 40px;
 	margin: 0 auto;
 	padding: 0;
-	margin-top: 30px;
+	margin: 30px 15px 0 0;
 }
 
 nav#menu ul{
@@ -90,7 +96,6 @@ nav#menu li{
 
 nav#menu a{
 	display: block;
-	margin-right: 1px;
 	padding: 10px 0px 15px 30px;
 	text-decoration: none;
 	text-transform: lowercase;
@@ -164,6 +169,7 @@ nav#menu li.active a{
     text-align: center;
     color: #444;
     line-height: 42px;
+    padding: 0 15px;
 }
 #home figcaption span{
 	font-size: 24px;
@@ -172,6 +178,8 @@ nav#menu li.active a{
 }
 #home figure.primary img{
 	display: block;
+	width:100%;
+	height:auto;
 }
 #home .content{/* creates white background for home */
 	width: 100%;
@@ -182,9 +190,10 @@ nav#menu li.active a{
 #home article{
 	position: relative;
 	top: -160px;
+	padding: 0 15px;
 }
 #home article section{
-	width: 600px;
+	width: 70%;
 }
 #home article section p{
 	margin: 0 0 15px 0;
@@ -428,7 +437,7 @@ nav#menu li.active a{
 #contact .content #contact-form input, #contact .content #contact-form select, #contact .content #contact-form textarea, #contact .content #contact-form button{
 	float: left;
 	clear: both;
-	width: 300px;
+	width: 100%;
 	margin: 0 0 15px 0;
 	font-family: 'The Girl Next Door', arial, sans-serif;
 }
@@ -442,7 +451,7 @@ nav#menu li.active a{
 }
 #contact .content #contact-form textarea{
 	height: 150px;
-	width: 400px;
+	width: 99%;
 }
 #contact .content #contact-form button[type="submit"]{
 	width: 100%;
@@ -467,10 +476,199 @@ nav#menu li.active a{
 /*================== footer */
 footer{
 	margin: 30px auto 0 auto !important;
-	padding: 15px 0 15px 0;
 	font-family: arial, helvetica, sans-serif;
 	font-size: 9px;
 	color: #999;
 	border-top: 1px solid #999;
 }
-footer h3{color: #999 !important;}
+footer h4{
+	color: #999 !important;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	
+}
+
+@media (max-width:1024px){
+	
+	.share-container .dropdown-toggle, .share-container .dropdown-text{
+		display: none
+	}
+	.share-container .dropdown-content{
+		visibility: visible;
+		opacity: 1;
+		width: 190px;
+		top:0;
+		right: 0;
+		background: #4c689a;
+		text-indent: 0;
+		-webkit-transition: 0;
+		-moz-transition: 0;
+		-ms-transition: 0;
+		-o-transition: 0;
+		transition: 0;
+		padding-left: 20px;
+		-webkit-box-shadow: 0 3px 3px 2px #466294;
+		box-shadow: 0 3px 3px 2px #466294;
+	}
+	.share-container .dropdown-content:after{
+		position: inherit;
+	    content: '';
+	    width: 0px;
+	    height: 0px;
+	    border-width: 0;
+	    border-color: transparent;
+    }
+	.share-container .dropdown-content li{
+		border: 0;
+		float: left;
+	}
+	.share-container .dropdown-content li a{
+		-webkit-transition: 0;
+		-moz-transition: 0;
+		-ms-transition: 0;
+		-o-transition: 0;
+		transition: 0;
+	}
+	.share-container .dropdown-content a:hover {
+		padding-left:0;
+	}
+	.share-container .dropdown-content li a span{
+		display: none;
+	}
+	.share-container .dropdown-content:hover,
+	.share-container .dropdown-toggle:focus ~ .dropdown-content {
+		top: 0;
+	}
+	.share-container .icon{
+		margin-right: 15px;
+	}
+	#portfolio .content p, #resume p, #contact .content p{
+		margin: 15px;
+	}
+	#home article section{
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+	#home article aside{
+		display: none;
+	}
+	#portfolio .content nav{
+		display: none;
+	}
+	#portfolio section{
+		margin: 0 0 0 30px;
+	}
+	#portfolio .listing{
+		margin: 0 0 0 20px;
+		padding: 0;
+	}
+	#portfolio .branding .listing{
+		width: 100%;
+		height: 350px;
+	}
+	#resume .content nav{
+		margin: 0 0 0 15px;
+	}
+	#contact form{
+		margin: 0 0 0 15px;
+	}
+}
+@media (max-width:862px){
+	#resume .content nav{
+		background: none;
+		min-height: 100px;
+		width: 80%;
+	}
+	#resume .content nav ul li{
+		clear: none;
+		margin: 0 10px 0 0;
+	}
+	#resume .content article{
+		display: none;
+	}
+}
+@media (max-width:768px){
+	#logo{
+		width: 70px;
+		margin: 30px 0 0 15px;
+	}
+	#home article section{
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+	.two-column{
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+@media (max-width:633px){
+	#contact .content #contact-form{
+		width: 95%;
+	}
+	#contact .content ul.side{
+		width: 97%;
+		padding: 5px 0 15px 10px;
+		margin: 30px 0 0 0;
+		clear: both;
+		background: #4c689a;
+		color: #fff;
+	}
+	#contact .content ul.side h2, #contact .content ul.side a{
+		color: #fff;
+	}
+}
+@media (max-width:579px){
+	header{height: 130px;}
+	h1 {
+		font-size: 20px;
+		margin: 30px 0 5px 0;
+	}
+	#logo{
+		height: 40px;
+		margin: 0px 0 0 15px;
+	}
+	#logo h1{margin: 20px 0 5px 0;}
+	#logo p{display: none;}
+	#logo img{
+		height: 100%;
+		width: 60px;
+	}
+	nav#menu{
+		float: none;
+		width: 265px;
+		margin: 0;
+	}
+	nav#menu a{padding: 0px 15px 15px 0px;}
+	#home figcaption{
+		font-size: 35px;
+		line-height: 32px;
+	}
+	#home .content{top: 120px;}
+	#home figure.primary{top: -160px;}
+	#home figcaption{
+		top: -150px;
+		font-size: 22px;
+		line-height: 23px;
+		letter-spacing: 0px;
+	}
+	#home figcaption span{font-size: 18px;}
+	#portfolio .branding .listing{height: 270px;}
+	#portfolio .listing img[src$=".jpg"]{
+		width: 100%;
+		height: auto;
+	}
+	#contact .content #contact-form{
+		width: 86%;
+	}
+	#contact .content #contact-form fieldset{
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	#contact .content ul.side li ul li{
+		margin: 0 0 10px 0;
+	}
+}

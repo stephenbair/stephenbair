@@ -1,6 +1,6 @@
 <div class="clearfix"></div>
 <footer class="container clearfix">
-    <h3>&copy; copyright <?php echo date('Y'); ?> stephenbair.com. All Rights Reserved.</h3>
+    <h4>&copy; copyright <?php echo date('Y'); ?> stephenbair.com. All Rights Reserved.</h4>
 </footer>        
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>

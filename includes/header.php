@@ -15,11 +15,11 @@
 		<div class="dropdown"> <span class="dropdown-toggle" tabindex="0"></span>
 			<div class="dropdown-text">Go, Be Social<i class="icon-export icon"></i></div>
 				<ul class="dropdown-content">
-					<li><a href="http://www.linkedin.com/in/stephenbair/" target="_blank">LinkedIn <i class="icon-linkedin icon"></i></a></li>
-					<li><a href="https://github.com/stephenbair" target="_blank">GitHub <i class="icon-github icon"></i></a></li>
-					<li><a href="https://twitter.com/stephenbair" target="_blank">Twitter <i class="icon-twitter icon"></i></a></li>
-					<li><a href="https://plus.google.com/u/0/106540523204506990738/posts" target="_blank">Google+ <i class="icon-gplus icon"></i></a></li>
-					<li><a href="https://www.facebook.com/stephenbaircom" target="_blank">Facebook <i class="icon-facebook icon"></i></a></li>
+					<li><a href="http://www.linkedin.com/in/stephenbair/" target="_blank"><span>LinkedIn</span> <i class="icon-linkedin icon"></i></a></li>
+					<li><a href="https://github.com/stephenbair" target="_blank"><span>GitHub</span> <i class="icon-github icon"></i></a></li>
+					<li><a href="https://twitter.com/stephenbair" target="_blank"><span>Twitter</span> <i class="icon-twitter icon"></i></a></li>
+					<li><a href="https://plus.google.com/u/0/106540523204506990738/posts" target="_blank"><span>Google+</span> <i class="icon-gplus icon"></i></a></li>
+					<li><a href="https://www.facebook.com/stephenbaircom" target="_blank"><span>Facebook</span> <i class="icon-facebook icon"></i></a></li>
 				</ul>
 			</div>
 		</div>
