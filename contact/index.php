@@ -33,7 +33,7 @@
 				<ul class="side">
 					<li>
 	        			<h2>Email</h2>
-	        			<a href="mailto:stephen@stephenbair.com">stephen@stephenbair.com</a>
+	        			sbair[at]stephenbair.com
 	        		</li>
 	        		<li>
 	        			<h2>Telephone</h2>
